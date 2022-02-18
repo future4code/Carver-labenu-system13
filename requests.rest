@@ -5,5 +5,18 @@ Content-Type: application/json
     "name": "Edson",
     "email": "edson.junior@hotmail.com",
     "birthDate": "03/11/1995",
-    "classGroup": "Carver"
+    "classGroup": "1"
 }
+
+###
+PUT http://localhost:3003/students/class
+Content-Type: application/json
+
+{
+    "id": "1645192721628",
+    "classGroup": "2"
+}
+
+###
+GET http://localhost:3003/students?name=Edson
+Content-Type: application/json

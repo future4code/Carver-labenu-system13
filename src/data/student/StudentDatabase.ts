@@ -5,6 +5,7 @@ export class StudentDatabase extends BaseDatabase {
     private static tableName = "labenu_system_students"
 
     private toStudent = (input: Student) => new Student(
+        input.getId(),
         input.getName(),
         input.getEmail(),
         input.getBirthDate(),
@@ -18,13 +19,24 @@ export class StudentDatabase extends BaseDatabase {
             name: student.getName(),
             email: student.getEmail(),
             birth_date: student.getBirthDate(),
-            class_room: student.getClassGroup()
+            id_class: student.getClassGroup()
         })
 
     getStudentByName = async (name: string) => {
+        if (!name) {
+            throw new Error("Please, check input for request!")
+        }
+
         const [result] = await BaseDatabase.connection(StudentDatabase.tableName).where({ name })
-        if (result) return this.toStudent(result)
+        
+        if (!result) {
+            throw new Error("Student not found!")
+        }
+
+        return result
     }
 
-    putStudentClassRoom = (id: string, classRoom: string) => BaseDatabase.connection(StudentDatabase.tableName).update(classRoom).where(id)
+
+    putStudentClassRoom = (id: string, classRoom: string) => BaseDatabase.connection(StudentDatabase.tableName).update("id_class", classRoom).where("id",id)
 }
+

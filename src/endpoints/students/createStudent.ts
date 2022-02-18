@@ -1,8 +1,8 @@
 import { Request, Response } from "express"
-import moment from "moment"
 import { StudentDatabase } from "../../data/student/StudentDatabase"
 import { Student } from "../../entities/users/students/student"
 import {FormatDate} from "../../services/dates/formatDate"
+import { IdGenerator } from "../../services/idGenerator/idGenerator"
 
 export const createStudent = async(
     req: Request,
@@ -10,7 +10,8 @@ export const createStudent = async(
 ) => {
     let errorCode = 400
     try {
-        const student: Student = new Student(req.body.name, req.body.email, req.body.birthDate, req.body.classGroup)
+        const id= new IdGenerator()
+        const student: Student = new Student(id.getId(), req.body.name, req.body.email, req.body.birthDate, req.body.classGroup)
 
         const database = new StudentDatabase()
 

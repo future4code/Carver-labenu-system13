@@ -1,17 +1,21 @@
+import { IdGenerator } from "../../services/idGenerator/idGenerator";
+
 export class User {
-    protected id = Date.now().toString();
+    protected id: string;
     protected name: string;
     protected email: string;
-    public birthDate: string;
+    protected birthDate: string;
     protected classGroup: string;
 
     constructor(
+        id: string,
         name: string,
         email: string,
         birthDate: string,
         classGroup: string
     ) {
-        this.name = name,
+        this.id = id,
+            this.name = name,
             this.email = email,
             this.birthDate = birthDate,
             this.classGroup = classGroup
@@ -37,7 +41,7 @@ export class User {
         return this.classGroup
     }
 
-    public setBirthDate(birthDate: string) {
+     setBirthDate(birthDate: string) {
         this.birthDate = birthDate
     }
 }
