@@ -28,4 +28,3 @@ export class StudentDatabase extends BaseDatabase {
 
     putStudentClassRoom = (id: string, classRoom: string) => BaseDatabase.connection(StudentDatabase.tableName).update(classRoom).where(id)
 }
-
