@@ -35,5 +35,8 @@ export class User {
 
     public getClassGroup(): string{
         return this.classGroup
+    }
+    public setBirthDate(birthDate: string) {
+        this.birthDate = birthDate
     } 
 }
