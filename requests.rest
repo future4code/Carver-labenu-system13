@@ -20,3 +20,23 @@ Content-Type: application/json
 ###
 GET http://localhost:3003/students?name=Edson
 Content-Type: application/json
+
+###
+POST http://localhost:3003/students/hobbies
+Content-Type: application/json
+
+{
+    "userId": "1645198577254",
+    "name": "Andar de bike"
+}
+###
+
+POST http://localhost:3003/teachers
+Content-Type: application/json
+
+{
+"classGroup": "1",
+"name": "Larissa",
+"email": "larisa@hotmail.com", 
+"birthDate": "23/12/1995"
+}

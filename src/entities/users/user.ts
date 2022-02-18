@@ -1,4 +1,3 @@
-import { IdGenerator } from "../../services/idGenerator/idGenerator";
 
 export class User {
     protected id: string;
