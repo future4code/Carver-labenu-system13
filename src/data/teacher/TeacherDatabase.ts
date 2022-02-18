@@ -5,6 +5,7 @@ export class TeacherDatabase extends BaseDatabase {
     private static tableName = "labenu_system_teacher"
 
     private toTeacher = (input: Teacher) => new Teacher(
+        input.getId(),
         input.getClassGroup(),
         input.getName(),
         input.getEmail(),

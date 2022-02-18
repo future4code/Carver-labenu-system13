@@ -1,17 +1,19 @@
 export class CapacityDetail {
-    private id = Date.now().toString();
+    private id: string;
     private name: string;
 
     constructor(
-        name:string
+        id: string,
+        name: string
     ) {
+        this.id = id
         this.name = name
     }
 
-    public getCapacityID() {
+    public getID() {
         return this.id
     }
-    public getCapacityName() {
+    public getName() {
         return this.name
     }
 }
