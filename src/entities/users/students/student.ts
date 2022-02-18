@@ -1,6 +1,7 @@
 import { User } from "../user";
 
 export class Student extends User{
+    
     constructor(
         id: string,
         name: string,
