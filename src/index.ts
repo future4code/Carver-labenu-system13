@@ -3,8 +3,8 @@ import { changeStudentClass } from "./endpoints/students/changeClassStudent";
 import { createTeacher } from "./endpoints/teachers/createTeacher";
 import { createStudent } from "./endpoints/students/createStudent";
 import { getStudentByName } from "./endpoints/students/getStudentByName";
-import { getTeacherByName } from "./endpoints/teachers/getTeacherByName"
 import { createHobbie } from "./endpoints/hobbies/createHobbie";
+import { getTeacherByName } from "./endpoints/teachers/getTeacherByName";
 
 
 

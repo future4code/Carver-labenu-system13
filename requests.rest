@@ -31,7 +31,6 @@ Content-Type: application/json
     "name": "Andar de bike"
 }
 ###
->>>>>>> aa6275b354d71cb52f507ce138ba0ff8d1b0c08c
 
 POST http://localhost:3003/teachers
 Content-Type: application/json
@@ -39,11 +38,22 @@ Content-Type: application/json
 {
 "classGroup": "1",
 "name": "Larissa",
-"email": "larissa5@hotmail.com", 
+"email": "larisa@hotmail.com", 
 "birthDate": "23/12/1995"
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 ###
 GET http://localhost:3003/teachers?name=larissa
 Content-Type: application/json
-
