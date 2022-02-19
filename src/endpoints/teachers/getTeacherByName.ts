@@ -25,4 +25,5 @@ export const getTeacherByName = async( req: Request, res: Response) => {
             res.send({ message: "Unexpected error" })
         }
     }
+    
 }
