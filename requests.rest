@@ -51,3 +51,12 @@ Content-Type: application/json
 "birthDate": "23/12/1995"
 }
 
+###
+POST http://localhost:3003/teachers/specialty
+Content-Type: application/json
+
+{
+    "userId": "1645204496619",
+    "name": "MySQL"
+}
+
