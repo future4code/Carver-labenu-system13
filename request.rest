@@ -1,9 +1,0 @@
-POST http://localhost:3003/teachers
-Content-Type: application/json
-
-{
-"classGroup": "1",
-"name": "Larissa",
-"email": "larissa@hotmail.com", 
-"birthDate": "23/12/1995"
-}

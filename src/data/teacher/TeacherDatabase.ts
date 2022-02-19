@@ -5,6 +5,7 @@ export class TeacherDatabase extends BaseDatabase {
     private static tableName = "labenu_system_teacher"
 
     private toTeacher = (input: Teacher) => new Teacher(
+        input.getId(),
         input.getClassGroup(),
         input.getName(),
         input.getEmail(),
@@ -22,8 +23,17 @@ export class TeacherDatabase extends BaseDatabase {
         })
 
     getTeacherByName = async (name: string) => {
+        if (!name) {
+            throw new Error("Please, check input for request!")
+        }
+
         const [result] = await BaseDatabase.connection(TeacherDatabase.tableName).where({ name })
-        if (result) return this.toTeacher(result)
+
+        if (!result) {
+            throw new Error("Teacher not found!")
+        }
+
+        return result
     }
 
     putTeacherClassRoom = (id: string, classRoom: string) => BaseDatabase.connection(TeacherDatabase.tableName).update(classRoom).where(id)
