@@ -31,12 +31,23 @@ Content-Type: application/json
 }
 ###
 
+
 POST http://localhost:3003/teachers
 Content-Type: application/json
 
 {
 "classGroup": "1",
 "name": "Larissa",
+"email": "larissa5@hotmail.com", 
+"birthDate": "23/12/1995"
+}
+
+###
+GET http://localhost:3003/teachers?name=larissa
+Content-Type: application/json
+
+{
 "email": "larisa@hotmail.com", 
 "birthDate": "23/12/1995"
 }
+

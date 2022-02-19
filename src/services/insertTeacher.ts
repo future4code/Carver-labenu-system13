@@ -1,8 +1,8 @@
-import { connection } from "../data/connection"
+import {BaseDatabase} from '../data/BaseDatabase';
 import { Teacher } from "../entities/users/teachers/teacher"
 
 export const insertTeacher = async (teacher: Teacher):Promise<void> => {
-    await connection("teacher")
+    await BaseDatabase.connection("labenu_system_teacher")
     .insert({
         id: teacher.getId(),
         name: teacher.getName(),

@@ -13,7 +13,7 @@ export class User {
         birthDate: string,
         classGroup: string
     ) {
-        this.id = id,
+            this.id = id,
             this.name = name,
             this.email = email,
             this.birthDate = birthDate,
