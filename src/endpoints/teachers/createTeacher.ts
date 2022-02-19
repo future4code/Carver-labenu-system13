@@ -2,14 +2,13 @@ import { Request, Response } from "express";
 import { TeacherDatabase } from "../../data/teacher/TeacherDatabase";
 import { Teacher } from '../../entities/users/teachers/teacher';
 import { FormatDate } from "../../services/formatDate";
-import { IdGenerator } from "../../services/idGenerator/idGenerator"
-
+import { IdGenerator } from "../../services/idGenerator/idGenerator";
 
 export const createTeacher = async (req: Request, res: Response) => {
     try {
         const id = new IdGenerator()
-        const teacher: Teacher = new Teacher( id.getId(), req.body.name, req.body.email, req.body.birthDate, req.body.classGroup)
 
+        const teacher: Teacher = new Teacher(id.getId(), req.body.name, req.body.email, req.body.birthDate, req.body.classGroup)
 
         const database = new TeacherDatabase()
 
