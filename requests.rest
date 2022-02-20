@@ -60,3 +60,20 @@ Content-Type: application/json
     "name": "MySQL"
 }
 
+###
+POST http://localhost:3003/class
+Content-Type: application/json
+
+{
+    "name": "Lovelace",
+    "module": "1"
+}
+
+###
+POST http://localhost:3003/class/module
+Content-Type: application/json
+
+{
+    "id": "1645369864526",
+    "module": "5"
+}
