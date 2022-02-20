@@ -1,6 +1,6 @@
 ## LabenuSystem:
 
-    API que representa o sistema de ensino.
+API que representa o sistema de ensino.
 
 Possui 3 entidades importantes:
 
