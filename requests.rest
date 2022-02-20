@@ -46,10 +46,7 @@ Content-Type: application/json
 GET http://localhost:3003/teachers?name=larissa
 Content-Type: application/json
 
-{
-"email": "larisa@hotmail.com", 
-"birthDate": "23/12/1995"
-}
+
 
 ###
 POST http://localhost:3003/teachers/specialty
@@ -61,6 +58,7 @@ Content-Type: application/json
 }
 
 ###
+
 POST http://localhost:3003/class
 Content-Type: application/json
 
@@ -77,3 +75,12 @@ Content-Type: application/json
     "id": "1645369864526",
     "module": "5"
 }
+
+PUT http://localhost:3003/teacher/class
+Content-Type: application/json
+
+{
+    "id": "1645204496619",
+    "classGroup": "1"
+}
+
