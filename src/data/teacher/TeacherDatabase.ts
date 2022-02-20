@@ -36,5 +36,5 @@ export class TeacherDatabase extends BaseDatabase {
         return result
     }
 
-    putTeacherClassRoom = (id: string, classRoom: string) => BaseDatabase.connection(TeacherDatabase.tableName).update(classRoom).where(id)
+    putTeacherClassRoom = (id: string, classRoom: string) => BaseDatabase.connection(TeacherDatabase.tableName).update("id_class",classRoom).where("id", id)
 }

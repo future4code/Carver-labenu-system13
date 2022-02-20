@@ -6,6 +6,7 @@ import { getStudentByName } from "./endpoints/students/getStudentByName";
 import { getTeacherByName } from "./endpoints/teachers/getTeacherByName"
 import { createHobbie } from "./endpoints/hobbies/createHobbie";
 import { createSpecialty } from "./endpoints/specialty/createSpecialty";
+import { changeClassTeacher } from "./endpoints/teachers/changeClassTeacher";
 
 
 
@@ -17,3 +18,4 @@ app.post("/teachers", createTeacher)
 
 app.post("/students/hobbies", createHobbie)
 app.post("/teachers/specialty", createSpecialty)
+app.put("/teacher/class",changeClassTeacher)
