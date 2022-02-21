@@ -1,0 +1,23 @@
+[
+    {
+        "id": "1",
+        "name": "Edson",
+        "email": "edson.junior@hotmail.com",
+        "birth_date": "1995-11-03",
+        "id_class": "1"
+    },
+    {
+        "id": "2",
+        "name": "Larissa",
+        "email": "larissa@hotmail.com",
+        "birth_date": "1995-12-23",
+        "id_class": "1"
+    },
+    {
+        "id": "3",
+        "name": "Mayra",
+        "email": "Mayra@hotmail.com",
+        "birth_date": "1995-12-24",
+        "id_class": "1"
+    }
+]
