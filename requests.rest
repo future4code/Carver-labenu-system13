@@ -1,0 +1,86 @@
+POST http://localhost:3003/students
+Content-Type: application/json
+
+{
+    "name": "Edson",
+    "email": "edson.junior@hotmail.com",
+    "birthDate": "03/11/1995",
+    "classGroup": "1"
+}
+
+###
+PUT http://localhost:3003/students/class
+Content-Type: application/json
+
+{
+    "id": "1645192721628",
+    "classGroup": "2"
+}
+
+###
+GET http://localhost:3003/students?name=Edson
+Content-Type: application/json
+
+###
+POST http://localhost:3003/students/hobbies
+Content-Type: application/json
+
+{
+    "userId": "1645198577254",
+    "name": "Andar de bike"
+}
+###
+
+
+POST http://localhost:3003/teachers
+Content-Type: application/json
+
+{
+"classGroup": "1",
+"name": "Larissa",
+"email": "larissa5@hotmail.com", 
+"birthDate": "23/12/1995"
+}
+
+###
+GET http://localhost:3003/teachers?name=larissa
+Content-Type: application/json
+
+
+
+###
+POST http://localhost:3003/teachers/specialty
+Content-Type: application/json
+
+{
+    "userId": "1645204496619",
+    "name": "MySQL"
+}
+
+###
+
+POST http://localhost:3003/class
+Content-Type: application/json
+
+{
+    "name": "Lovelace",
+    "module": "1"
+}
+
+###
+POST http://localhost:3003/class/module
+Content-Type: application/json
+
+{
+    "id": "1645369864526",
+    "module": "5"
+}
+
+PUT http://localhost:3003/teacher/class
+Content-Type: application/json
+
+{
+    "id": "1645204496619",
+    "classGroup": "1"
+}
+

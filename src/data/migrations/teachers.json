@@ -1,0 +1,23 @@
+[
+    {
+        "id": "1",
+        "name": "Índio",
+        "email": "índio@hotmail.com",
+        "birth_date": "1992-12-15",
+        "id_class": "1"
+    },
+    {
+        "id": "2",
+        "name": "Letícia",
+        "email": "letícia@hotmail.com",
+        "birth_date": "1992-03-01",
+        "id_class": "1"
+    },
+    {
+        "id": "3",
+        "name": "Yuzo",
+        "email": "yuzo@hotmail.com",
+        "birth_date": "1992-12-03",
+        "id_class": "1"
+    }
+]
